@@ -1,5 +1,7 @@
-#약국에서 중복된 이름의 고객들을 안내하는 법
-약국에서 중복된 이름의 고객들을 안내하는 법
+---
+layout: single
+title:  "How to guide customers in a pharmacy"
+---
 
 ```python
 #3
