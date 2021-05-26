@@ -1,0 +1,77 @@
+1. 리스트 words=["cat", "window", "defenestrate"]에서 결과와 같이 항목과 그것의 길이가 출력되도록 for문을 이용하여 프로그램을 작성하시오.
+
+
+```python
+words = ["cat", "window", "defenestrate"]
+for i in range (0,3,1):
+  print(f"{words[i]} {len(words[i])}")
+```
+
+    cat 3
+    window 6
+    defenestrate 12
+    
+
+2. alist= [2, 7, 6, 4, 5]에 대하여 합계와 평균을 구하여 결과와 같이 출력하는 프로그램을 작성하시오.
+
+
+```python
+alist = [2, 7, 6, 4, 5]
+sum = 0
+for i in alist:
+  sum = sum + i
+print(f"합계={sum}, 평균={sum / len(alist)}")
+```
+
+    합계=29.4, 평균=4.8999999999999995
+    
+
+3. 1부터 100까지 수의 범위에서 5씩 더하여 결과와 같이 출력하는 프로그램을 작성하시오.
+
+
+```python
+for i in range(1, 101, 5):
+  print(i, end = " ") 
+```
+
+    1 6 11 16 21 26 31 36 41 46 51 56 61 66 71 76 81 86 91 96 
+
+4. 사용자가 0을 입력할 때까지 정수를 입력받아서 저장한 후 sort()함수를 이용하여 결과와 같이 되도록 출력해 보시오.
+
+
+```python
+lst = []
+while True:
+  data = int(input("입력: "))
+  if data == 0:
+    print("정렬 전: " + str(lst))
+    lst.sort()
+    print("정렬 후: " + str(lst))
+    break
+  else:
+    lst.append(data)
+
+```
+
+    입력: 4
+    입력: 6
+    입력: 2
+    입력: 3
+    입력: 4
+    입력: 0
+    [2, 3, 4, 4, 6]
+    
+
+5. 1부터 시작하여 숫자를 더해 나갈 때 그 합이 최초로 150이 넘을 때에 마지막으로 더해진 숫자는 무엇인지 출력하는 프로그램을 작성하시오.
+
+
+```python
+x, y = 0, 0
+while x <= 150:
+  y = y + 1
+  x = x + y
+print(f"{y}까지 더해진 값은 {x}이다.")
+```
+
+    17까지 더해진 값은 153이다.
+    
